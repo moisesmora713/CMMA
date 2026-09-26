@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro</title>
+</head>
+<body>
+
+    <header>
+        <h1>Registro al Evento Universitario</h1>
+        <p>Por favor, completa el siguiente formulario para registrar tu participación.</p>
+    </header>
+
+    <main>
+        <form action="#" method="post">
+            
+            <div>
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Ej. Juan Pérez">
+            </div>
+            <br>
+
+            <div>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required placeholder="usuario@dominio.com">
+            </div>
+            <br>
+
+            <div>
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" min="15" max="100" required placeholder="Ej. 20">
+            </div>
+            <br>
+
+            <div>
+                <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+            </div>
+            <br>
+
+            <div>
+                <label for="carrera">Carrera:</label>
+                <select id="carrera" name="carrera" required>
+                    <option value="" disabled selected>-- Selecciona una carrera --</option>
+                    <option value="ingenieria_software">Lic. Tecnologías de la información</option>
+                    <option value="redes_seguridad">Lic. Contabilodad</option>
+                    <option value="administracion">Lic. Administración</option>
+                    <option value="medicina">Lic. Relaciones publicas</option>
+                </select>
+            </div>
+            <br>
+
+            <div>
+                <label>Turno de asistencia:</label><br>
+                <input type="radio" id="matutino" name="turno" value="matutino" required>
+                <label for="matutino">Matutino</label><br>
+                
+                <input type="radio" id="vespertino" name="turno" value="vespertino">
+                <label for="vespertino">Vespertino</label>
+            </div>
+            <br>
+
+            <div>
+                <input type="checkbox" id="terminos" name="terminos" required>
+                <label for="terminos">Reconozco que mis datos son correctos</label>
+            </div>
+            <br>
+
+            <!-- Botones -->
+            <div>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpiar</button>
+            </div>
+
+        </form>
+    </main>
+
+</body>
+</html>

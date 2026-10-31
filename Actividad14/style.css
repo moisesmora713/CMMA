@@ -1,0 +1,77 @@
+/* Asignación de áreas y colores */
+.morado  { grid-area: morado;  background-color: #8e44ad; }
+.azul    { grid-area: azul;    background-color: #3498db; }
+.azula    { grid-area: azula;    background-color: #3498db; }
+.rojo    { grid-area: rojo;    background-color: #e74c3c; }
+.rojoa    { grid-area: rojoa;    background-color: #e74c3c; }
+.verde   { grid-area: verde;   background-color: #2ecc71; }
+.verdei   { grid-area: verdei;   background-color: #2ecc71; }
+.lila    { grid-area: lila;    background-color: #a58caa; }
+.lila2   { grid-area: lila2;    background-color: #a58caa; }
+.lila3   { grid-area: lila3;    background-color: #a58caa; }
+.lila4   { grid-area: lila4;    background-color: #a58caa; }
+.lila5   { grid-area: lila5;    background-color: #a58caa; }
+.lila6   { grid-area: lila6;    background-color: #a58caa; }
+.lila7   { grid-area: lila7;    background-color: #a58caa; }
+.lila8   { grid-area: lila8;    background-color: #a58caa; }
+.naranja { grid-area: naranja; background-color: #f39c12; }
+.naranjai { grid-area: naranjai; background-color: #f39c12; }
+
+.grid1{
+    display: grid; /*Me ayuda a poder organizar las cuadricolas en filas y rows*/
+    /*Uso template ya que me ayuda a estructurar las cuadriculas*/
+    /*Usare fr para medir las cuadrculas en fracciones*/
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1.5fr 1fr 1.5fr;
+    grid-template-areas: 
+        "morado morado azul"
+        "rojo verde azul"
+        "lila naranja azul";
+    /*Gap me ayuda a controlar el espacio entre recuadros*/
+    gap: 10px;
+    /*Height me ayuda a controlar la altura*/
+    /*Usare una unidad de medición relativo al porcentaje de la pantalla*/
+    height: 90vh;
+    /*padding evita que se comprima en el bloque*/
+    padding: 10px;
+}  
+
+.grid2{
+    display: grid; /*Me ayuda a poder organizar las cuadricolas en filas y rows*/
+    /*Uso template ya que me ayuda a estructurar las cuadriculas*/
+    /*Usare fr para medir las cuadrculas en fracciones*/
+    grid-template-columns: 2fr 1fr 2fr 0.5fr;
+    grid-template-rows: 2fr 1fr 1.5fr 1.5fr;
+    grid-template-areas:
+        "rojo morado morado verde"
+        "rojo verdei azul verde"
+        "rojo verdei lila verde"
+        "rojo naranja naranja verde";
+    gap: 10px;
+    height: 90vh;
+    padding: 10px;
+    /*Gap me ayuda a controlar el espacio entre recuadros*/
+    gap: 10px;
+    /*Height me ayuda a controlar la altura*/
+    /*Usare una unidad de medición relativo al porcentaje de la pantalla*/
+    height: 90vh;
+    /*padding evita que se comprima en el bloque*/
+    padding: 10px;
+}  
+
+.grid3 {
+    display: grid;
+    grid-template-columns: 1fr repeat(5, 1fr) 1fr; /* 7 columnas en total */
+    grid-template-rows: 1fr 1fr 1.5fr 1fr 1fr;     /* 5 filas */
+    grid-template-areas:
+        "morado morado morado morado morado morado naranja"
+        "naranjai verde verde verde verde verde naranja"
+        "naranjai azula azula azul azul azul naranja"
+        "naranjai lila lila2 rojo lila3 lila4 naranja"
+        "naranjai lila5 lila6 rojoa lila7 lila8 naranja";
+    gap: 10px;
+    height: 90vh;
+    padding: 10px;
+}
+
+
